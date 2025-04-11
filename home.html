@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultural Compass</title>
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
+</head>
+<body>
+
+    <!-- 1. Header / Main Navigation -->
+    <header class="home-header">
+        <div class="container header-container">
+            <a href="index.html" class="logo">
+                <img src="images/logo_placeholder.png" alt="Roots & Realities Logo">
+            </a>
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="#villages">Explore Villages</a></li>
+                    <li><a href="#events">Events</a></li>
+                    <li><a href="#blogs">Blogs</a></li>
+                    <li><a href="#news">News</a></li>
+                    <li><a href="#map">Map</a></li>
+                </ul>
+            </nav>
+            <div class="header-actions">
+                <div class="search-container">
+                    <input type="search" placeholder="Search villages, stories..." aria-label="Search">
+                    <button type="submit" aria-label="Submit search"><i class="fas fa-search"></i> <!-- Placeholder icon --></button>
+                </div>
+                 <div class="language-selector">
+                     <select aria-label="Select Language">
+                         <option value="en">English</option>
+                         <option value="hi">हिन्दी</option>
+                         <option value="ta">தமிழ்</option>
+                         <!-- Add other languages -->
+                     </select>
+                 </div>
+                
+                <div class="user-profile" id="user-profile-section" style="display: none;">
+                    <a href="dashboard.html" id="profile-link">
+                        <img id="user-avatar" src="avatar.jpg" alt="User Avatar" class="user-avatar">
+                    </a>
+                </div>
+            </div>
+             <button class="mobile-menu-toggle" aria-label="Toggle Menu"><i class="fas fa-bars"></i></button>
+        </div>
+    </header>
+
+    <main>
+        <!-- 2. Hero Section -->
+        <section class="home-hero">
+            <div class="hero-background">
+                 <!-- Background image/video handled by CSS -->
+            </div>
+            <div class="container hero-content">
+                <h1>Discover India's Untold Stories</h1>
+                <p>Explore vibrant local cultures, documented by the community, for the world.</p>
+                <a href="#trails" class="btn btn-large btn-primary">Start Exploring Trails</a>
+                <!-- Or maybe feature the search bar prominently here again -->
+            </div>
+        </section>
+
+        <!-- 3. Featured Content Sections -->
+
+        <!-- Featured Trails -->
+
+        <!-- Discover Villages / Localpedia -->
+        <section id="villages" class="home-featured home-featured-villages">
+            <div class="container">
+                <h2>Explore Villages (Localpedia)</h2>
+                 <div class="featured-grid">
+                    <!-- Village Card 1 -->
+                    <a href="#" class="card village-card">
+                        <img src="images/village1_placeholder.jpg" alt="Village 1 Thumbnail">
+                        <div class="card-content">
+                            <h3>Village Name A</h3>
+                            <p>Known for its unique pottery and ancient temple...</p>
+                            <span>State P, District Q</span>
+                        </div>
+                    </a>
+                    <!-- Village Card 2 -->
+                    <a href="#" class="card village-card">
+                         <img src="images/village2_placeholder.jpg" alt="Village 2 Thumbnail">
+                         <div class="card-content">
+                            <h3>Village Name B</h3>
+                            <p>Famous for its handloom weaving and harvest festival...</p>
+                            <span>State R, District S</span>
+                        </div>
+                    </a>
+                    <!-- Village Card 3 -->
+                     <a href="#" class="card village-card">
+                         <img src="images/village3_placeholder.jpg" alt="Village 3 Thumbnail">
+                         <div class="card-content">
+                            <h3>Village Name C</h3>
+                            <p>Home to a rare folk art form and scenic beauty...</p>
+                            <span>State T, District U</span>
+                        </div>
+                    </a>
+                     <!-- Add more cards or a 'View All' link -->
+                 </div>
+                 <div class="view-all-link">
+                    <a href="villages.html" class="btn btn-secondary">Explore All Villages</a>
+                 </div>
+            </div>
+        </section>
+
+
+        <section id="events" class="home-featured home-featured-events">
+            <div class="container">
+                <h2>Explore Events (Localpedia)</h2>
+                 <div class="featured-grid">
+                    <!-- Village Card 1 -->
+                    <a href="#" class="card village-card">
+                        <img src="images/village1_placeholder.jpg" alt="Village 1 Thumbnail">
+                        <div class="card-content">
+                            <h3>Village Name A</h3>
+                            <p>Known for its unique pottery and ancient temple...</p>
+                            <span>State P, District Q</span>
+                        </div>
+                    </a>
+                    <!-- Village Card 2 -->
+                    <a href="#" class="card village-card">
+                         <img src="images/village2_placeholder.jpg" alt="Village 2 Thumbnail">
+                         <div class="card-content">
+                            <h3>Village Name B</h3>
+                            <p>Famous for its handloom weaving and harvest festival...</p>
+                            <span>State R, District S</span>
+                        </div>
+                    </a>
+                    <!-- Village Card 3 -->
+                     <a href="#" class="card village-card">
+                         <img src="images/village3_placeholder.jpg" alt="Village 3 Thumbnail">
+                         <div class="card-content">
+                            <h3>Village Name C</h3>
+                            <p>Home to a rare folk art form and scenic beauty...</p>
+                            <span>State T, District U</span>
+                        </div>
+                    </a>
+                     <!-- Add more cards or a 'View All' link -->
+                 </div>
+                 <div class="view-all-link">
+                    <a href="events.html" class="btn btn-secondary">Explore All Events</a>
+                 </div>
+            </div>
+        </section>
+
+
+        <!-- Recent/Popular Stories -->
+        <section id="blogs" class="home-featured home-featured-blogs">
+            <div class="container">
+                <h2>Recent blogs</h2>
+                 <div class="featured-grid">
+                     <!-- Story Card 1 (Audio Example) -->
+                    <a href="#" class="card story-card">
+                         <div class="story-thumbnail audio-thumb"> <!-- Specific class for audio -->
+                            <img src="images/audio_placeholder.png" alt="Audio Story">
+                            <i class="fas fa-play-circle"></i>
+                         </div>
+                         <div class="card-content">
+                            <h3>Interview with Elder Name</h3>
+                            <p>Recounting the village history...</p>
+                             <span class="contributor-info">by Student Name <img src="images/avatar_placeholder.png" class="avatar-xs" alt=""></span>
+                         </div>
+                    </a>
+                    <!-- Story Card 2 (Video Example) -->
+                     <a href="#" class="card story-card">
+                         <div class="story-thumbnail video-thumb"> <!-- Specific class for video -->
+                            <img src="images/video_placeholder.jpg" alt="Video Story">
+                            <i class="fas fa-play-circle"></i>
+                         </div>
+                         <div class="card-content">
+                            <h3>Local Festival Performance</h3>
+                             <p>A vibrant dance captured during...</p>
+                             <span class="contributor-info">by Local Group <img src="images/avatar_placeholder.png" class="avatar-xs" alt=""></span>
+                         </div>
+                    </a>
+                     <!-- Story Card 3 (Text/Wiki Example) -->
+                     <a href="#" class="card story-card">
+                          <div class="story-thumbnail text-thumb"> <!-- Specific class for text -->
+                             <img src="images/text_placeholder.jpg" alt="Text Story">
+                          </div>
+                          <div class="card-content">
+                             <h3>Traditional Recipe: Dish Name</h3>
+                             <p>Learn how to make this local delicacy...</p>
+                             <span class="contributor-info">by Community Member <img src="images/avatar_placeholder.png" class="avatar-xs" alt=""></span>
+                          </div>
+                     </a>
+                    <!-- Add more cards or a 'View All' link -->
+                 </div>
+                 <div class="view-all-link">
+                    <a href="stories.html" class="btn btn-secondary">Browse All Stories</a>
+                 </div>
+            </div>
+        </section>
+
+
+        <section id="news" class="home-featured home-featured-news">
+            <div class="container">
+                <h2>Featured Cultural news</h2>
+                <div class="featured-grid">
+                    <!-- Trail Card 1 -->
+                    <a href="#" class="card trail-card">
+                        <img src="images/trail1_placeholder.jpg" alt="Trail 1 Thumbnail">
+                        <div class="card-content">
+                            <h3>Trail Title 1: Artisans of Region X</h3>
+                            <p>Discover traditional crafts and meet local artisans...</p>
+                            <span>Region X</span>
+                        </div>
+                    </a>
+                    <!-- Trail Card 2 -->
+                     <a href="#" class="card trail-card">
+                        <img src="images/trail2_placeholder.jpg" alt="Trail 2 Thumbnail">
+                        <div class="card-content">
+                            <h3>Trail Title 2: Festivals of Village Y</h3>
+                            <p>Experience the vibrant local festivals and rituals...</p>
+                            <span>Village Y</span>
+                        </div>
+                    </a>
+                    <!-- Trail Card 3 -->
+                     <a href="#" class="card trail-card">
+                        <img src="images/trail3_placeholder.jpg" alt="Trail 3 Thumbnail">
+                        <div class="card-content">
+                            <h3>Trail Title 3: Musical Heritage Path</h3>
+                            <p>Listen to the unique folk music traditions of the area...</p>
+                            <span>Region Z</span>
+                        </div>
+                    </a>
+                    <!-- Add more cards or a 'View All' link -->
+                </div>
+                 <div class="view-all-link">
+                    <a href="news.html" class="btn btn-secondary">View All Trails</a>
+                 </div>
+            </div>
+        </section>
+
+        <!-- How to Contribute Section -->
+        <section class="home-contribute">
+            <div class="container">
+                <h2>Become a Cultural Storyteller</h2>
+                <p>Your stories matter. Help us preserve your local heritage by sharing audio, video, or text about your village's traditions, festivals, art, and daily life.</p>
+                <a href="signup.html?role=contributor" class="btn btn-primary btn-large">Start Contributing Now</a>
+                <!-- Maybe add link to contributor guidelines -->
+                <p><a href="#">Learn more about contributing</a></p>
+            </div>
+        </section>
+        
+        <section class="home-map-preview" id="map">
+            <div class="container">
+                <h2>Explore Our Impact Map</h2>
+                <div id="map-placeholder" style="height: 400px; background: #eee; text-align: center; padding-top: 180px;">Interactive Map Area</div>
+            </div>
+        </section>
+
+
+
+        <section class="home-support">
+            <div class="container">
+                <h2>Support Our Mission</h2>
+                <p>Help us continue preserving cultures and empowering communities.</p>
+                <a href="#" class="btn btn-secondary">Donate or Sponsor</a>
+            </div>
+        </section>
+        
+
+    </main>
+
+    <!-- 5. Footer -->
+    <footer class="home-footer">
+        <div class="container">
+            <div class="footer-columns">
+                <div class="footer-col">
+                    <h4>Roots & Realities</h4>
+                    <p>Preserving culture, connecting communities.</p>
+                     <!-- Logo again? -->
+                </div>
+                <div class="footer-col">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="#">About Us</a></li>
+                        <li><a href="#">Contact</a></li>
+                        <li><a href="#">How it Works</a></li>
+                        <li><a href="#">Become a Contributor</a></li>
+                    </ul>
+                </div>
+                 <div class="footer-col">
+                    <h4>Explore</h4>
+                    <ul>
+                        <li><a href="#trails">Cultural Trails</a></li>
+                        <li><a href="#villages">Villages</a></li>
+                        <li><a href="#stories">Stories</a></li>
+                        <li><a href="#">Regions</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Legal</h4>
+                    <ul>
+                        <li><a href="#">Privacy Policy</a></li>
+                        <li><a href="#">Terms of Service</a></li>
+                        <li><a href="#">Content Policy</a></li>
+                    </ul>
+                </div>
+                <div class="footer-col">
+                    <h4>Follow Us</h4>
+                     <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
+                     </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Roots & Realities. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Add home-script.js for authentication handling -->
+    <script type="module" src="home-script.js"></script>
+
+    <!-- Add inline script for profile link handling -->
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const profileLink = document.getElementById('profile-link');
+            if (profileLink) {
+                profileLink.addEventListener('click', function(e) {
+                    e.preventDefault();
+                    
+                    // Import Firebase auth
+                    import('https://www.gstatic.com/firebasejs/11.6.0/firebase-app.js')
+                        .then(module => {
+                            const { initializeApp } = module;
+                            return import('https://www.gstatic.com/firebasejs/11.6.0/firebase-auth.js')
+                                .then(authModule => {
+                                    const { getAuth, onAuthStateChanged } = authModule;
+                                    
+                                    // Initialize Firebase with the same config
+                                    const firebaseConfig = {
+                                        apiKey: "AIzaSyDBYx04o9699LZ5ZhLxCNhmsRtzxo84hxM",
+                                        authDomain: "thestory-d73b7.firebaseapp.com",
+                                        projectId: "thestory-d73b7",
+                                        storageBucket: "thestory-d73b7.appspot.com",
+                                        messagingSenderId: "127364201980",
+                                        appId: "1:127364201980:web:02cda0fbdfdf1144d50679"
+                                    };
+                                    
+                                    // Initialize Firebase if not already initialized
+                                    let app;
+                                    try {
+                                        app = initializeApp(firebaseConfig);
+                                    } catch (e) {
+                                        // App already initialized
+                                        app = firebase.app();
+                                    }
+                                    
+                                    const auth = getAuth(app);
+                                    
+                                    // Check auth state
+                                    onAuthStateChanged(auth, (user) => {
+                                        if (user) {
+                                            // User is signed in, redirect to dashboard
+                                            window.location.href = 'dashboard.html';
+                                        } else {
+                                            // User is not signed in, redirect to login
+                                            window.location.href = 'login.html';
+                                        }
+                                    });
+                                });
+                        })
+                        .catch(error => {
+                            console.error("Error loading Firebase modules:", error);
+                            // Fallback to login page if there's an error
+                            window.location.href = 'login.html';
+                        });
+                });
+            }
+        });
+    </script>
+
+</body>
+</html> 
