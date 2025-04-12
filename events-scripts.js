@@ -321,4 +321,4 @@ function populateFilters() {
 }
 
 // Call populateFilters after loading events
-setTimeout(populateFilters, 1000); 
+setTimeout(populateFilters, 1000);

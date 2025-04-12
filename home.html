@@ -5,7 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cultural Compass</title>
     <link rel="stylesheet" href="home-style.css">
-    <link rel="stylesheet" href="chatbot.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
 </head>
 <body>
@@ -14,7 +13,7 @@
     <header class="home-header">
         <div class="container header-container">
             <a href="index.html" class="logo">
-                <img src="images/logo_placeholder.png" alt="Cultural Compass">
+                <img src="images/logo.png" alt="Cultural Compass">
             </a>
             <nav class="main-nav">
                 <ul>
@@ -53,12 +52,12 @@
         <!-- 2. Hero Section -->
         <section class="home-hero">
             <div class="hero-background">
-                 <!-- Background image/video handled by CSS -->
+                <img src="https://www.authenticindiatours.com/app/uploads/2021/02/Customs-and-traditions-in-Indian-culture-Kathakali-1400x550-c-default.jpg" alt="indian culture" style="width: 100%; height: 100%; object-fit: cover;">
             </div>
             <div class="container hero-content">
                 <h1>Discover India's Untold Stories</h1>
                 <p>Explore vibrant local cultures, documented by the community, for the world.</p>
-                <a href="#trails" class="btn btn-large btn-primary">Start Exploring Trails</a>
+                <a href="#culture" class="btn btn-large btn-primary">Start Exploring Trails</a>
                 <!-- Or maybe feature the search bar prominently here again -->
             </div>
         </section>
@@ -124,7 +123,7 @@
                         <img src="https://imagesvs.oneindia.com/img/2025/01/hampi-utsav-2025-jpg-1735832965858_1735832966297-600x338.jpg" alt="Karnataka Event Thumbnail">
                         <div class="card-content">
                             <h3>Hampi Utsav 2025</h3>
-                            <p>Experience Karnataka's glorious history through dance, music, and light shows.</p>
+                            <p>Experience Karnataka’s glorious history through dance, music, and light shows.</p>
                             <span>Upcoming · January 2025 · Karnataka</span>
                         </div>
                     </a>
@@ -157,57 +156,65 @@
 
 
         <!-- Recent/Popular Stories -->
-        <section id="voices" class="home-featured home-featured-blogs">
+        <section id="blogs" class="home-featured home-featured-blogs">
             <div class="container">
-                <h2>Voices of India</h2>
-                <p class="section-subtitle" style="text-align: center;">Experience India's rich culture through real stories, sounds, and sights shared by locals and explorers</p>
-        
-                <div class="featured-grid">
-                    <!-- Story Card 1 - Audio Interview -->
-                    <a href="#" class="card story-card">
-                        <div class="story-thumbnail audio-thumb">
-                            <img src="https://images.unsplash.com/photo-1513628253939-010e64ac66cd?auto=format&fit=crop&w=800&q=80" alt="Audio Story">
-                            <i class="fas fa-play-circle"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Voices from Kutch</h3>
-                            <p>An elder artisan shares stories of desert embroidery and folk rituals.</p>
-                            <span class="contributor-info">by Riya Patel <img src="images/avatar_placeholder.png" class="avatar-xs" alt=""></span>
-                        </div>
-                    </a>
-        
-                    <!-- Story Card 2 - Festival Video -->
-                    <a href="#" class="card story-card">
-                        <div class="story-thumbnail video-thumb">
-                            <img src="https://images.unsplash.com/photo-1615484477651-5082bba35a43?auto=format&fit=crop&w=800&q=80" alt="Festival Performance">
-                            <i class="fas fa-play-circle"></i>
-                        </div>
-                        <div class="card-content">
-                            <h3>Pongal Festival Live</h3>
-                            <p>A vibrant folk dance during the Pongal celebrations in Tamil Nadu.</p>
-                            <span class="contributor-info">by Local Youth Club <img src="images/avatar_placeholder.png" class="avatar-xs" alt=""></span>
-                        </div>
-                    </a>
-        
-                    <!-- Story Card 3 - Cultural Text Recipe -->
-                    <a href="#" class="card story-card">
-                        <div class="story-thumbnail text-thumb">
-                            <img src="https://images.unsplash.com/photo-1578683401099-7e84d3e50bc1?auto=format&fit=crop&w=800&q=80" alt="Recipe Thumbnail">
-                        </div>
-                        <div class="card-content">
-                            <h3>Traditional Pongal Recipe</h3>
-                            <p>Learn how to prepare this sweet rice dish, symbolic of harvest in the South.</p>
-                            <span class="contributor-info">by Meenakshi R <img src="images/avatar_placeholder.png" class="avatar-xs" alt=""></span>
-                        </div>
-                    </a>
-                </div>
-        
-                <div class="view-all-link">
-                    <a href="stories.html" class="btn btn-secondary">Browse All Stories</a>
-                </div>
+              <h2>Voices of India</h2>
+              <p class="section-subtitle" style="text-align: center;">
+                Experience India’s rich culture through real stories, sounds, and sights shared by locals and explorers
+              </p>
+          
+              <div class="featured-grid">
+                <!-- Example Card -->
+                <a href="audio.mp3" class="card story-card">
+                  <div class="story-thumbnail audio-thumb">
+                    <img src="https://learningmole.com/wp-content/uploads/2024/06/Cultural-Storytelling-01.png" alt="Audio Story">
+                    <i class="fas fa-play-circle play-icon"></i>
+                  </div>
+                  <div class="card-content">
+                    <h3 class="story-title">Voices from Kutch</h3>
+                    <p class="story-description">An elder artisan shares stories of desert embroidery and folk rituals.</p>
+                    <span class="story-author">by <strong>Riya Patel</strong></span>
+                    <button class="show-more-btn">Show More</button>
+                  </div>
+                </a>
+
+
+                <!-- Story Card 2 - Festival Video -->
+                <a href="https://youtu.be/Cyy4YhNlHB0?si=5BrKvseqZ7a8hbs3" target="_blank" class="card story-card">
+                    <div class="story-thumbnail video-thumb">
+                        <img src="https://www.financialexpress.com/wp-content/uploads/2025/01/diya-2025-01-12T095018.576.jpg" alt="Festival Performance">
+                        <i class="fas fa-play-circle"></i>
+                    </div>
+                    <div class="card-content">
+                        <h3>Pongal Festival Live</h3>
+                        <p>A vibrant folk dance during the Pongal celebrations in Tamil Nadu.</p>
+                        <span class="contributor-info">by<strong> Local Youth Clu</strong></span>
+                        <button class="show-more-btn">Show More</button>
+                    </div>
+                </a>
+
+
+                <!-- Story Card 3 - Cultural Text Recipe -->
+                <a href="" class="card story-card">
+                    <div class="story-thumbnail text-thumb">
+                        <img src="https://clubmahindra.gumlet.io/blog/images/Tips-for-Perfect-Pongal-Recipes-resized.jpg?w=376&dpr=2.6" alt="Recipe Thumbnail">
+                    </div>
+                    <div class="card-content">
+                        <h3>Traditional Pongal Recipe</h3>
+                        <p>Learn how to prepare this sweet rice dish, symbolic of harvest in the South.</p>
+                        <span class="contributor-info">by <strong>Meenakshi R</strong> </span>
+                        <button class="show-more-btn">Show More</button>
+                    </div>
+                </a>
+                <!-- Repeat for other cards -->
+              </div>
+          
+              <div class="view-all-link">
+                <a href="blogs.html" class="btn btn-secondary">Browse All Stories</a>
+              </div>
             </div>
-        </section>
-        
+          </section>
+          
 
 
         <section id="news" class="home-featured home-featured-news">
@@ -259,7 +266,7 @@
                 <p><a href="#">Learn more about contributing</a></p>
             </div>
         </section>
-        
+
         <section class="home-map-preview" id="map">
             <div class="container">
                 <h2>Explore Our Impact Map</h2>
@@ -393,30 +400,49 @@
         });
     </script>
 
-    <!-- Floating Chatbot -->
-    <div class="chatbot-container">
-        <button id="chat-toggle" class="chat-toggle">
-            <i class="fas fa-comments"></i>
-        </button>
-        <div id="chat-box" class="chat-box">
-            <div class="chat-header">
-                <h3>Cultural Assistant</h3>
-                <button id="chat-close" class="chat-close">
-                    <i class="fas fa-times"></i>
-                </button>
-            </div>
-            <div id="chat-messages" class="chat-messages"></div>
-            <div class="chat-input-area">
-                <input type="text" id="chat-input" placeholder="Type your message...">
-                <button id="chat-send" class="chat-send">
-                    <i class="fas fa-paper-plane"></i>
-                </button>
-            </div>
-        </div>
-    </div>
-
-    <!-- Link to chatbot.js -->
-    <script src="chatbot.js"></script>
+    <!-- Floating Chat Icon -->
+<style>
+    #chat-float {
+      position: fixed;
+      bottom: 20px;
+      right: 20px;
+      background: #25D366;
+      color: white;
+      border-radius: 50%;
+      width: 60px;
+      height: 60px;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+      cursor: pointer;
+      z-index: 9999;
+    }
+    #chat-iframe {
+      display: none;
+      position: fixed;
+      bottom: 90px;
+      right: 20px;
+      width: 350px;
+      height: 500px;
+      border: none;
+      z-index: 9998;
+      box-shadow: 0 0 15px rgba(0,0,0,0.3);
+      border-radius: 15px;
+    }
+  </style>
+  
+  <!-- Chat Icon -->
+  <div id="chat-float" onclick="toggleChat()">💬</div>
+  
+  <!-- Chat Iframe -->
+  <iframe id="chat-iframe" src="http://localhost:8501" title="Chatbot"></iframe>
+  
+  <script>
+    function toggleChat() {
+      var iframe = document.getElementById("chat-iframe");
+      iframe.style.display = (iframe.style.display === "none") ? "block" : "none";
+    }
+  </script>
 
 </body>
 </html>
