@@ -1,0 +1,365 @@
+.calendar-main {
+    padding: 4rem 0;
+    background-color: var(--bg-light);
+    min-height: calc(100vh - 200px);
+}
+
+.calendar-container {
+    max-width: 800px;
+    margin: 0 auto;
+    background: var(--bg-white);
+    padding: 2.5rem;
+    border-radius: var(--border-radius);
+    box-shadow: var(--shadow-medium);
+}
+
+.calendar-container h1 {
+    text-align: center;
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 2.5rem;
+}
+
+.calendar-container h1 i {
+    margin-right: 0.5rem;
+}
+
+.section-subtitle {
+    text-align: center;
+    color: var(--text-secondary);
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+/* Calendar Filters */
+.calendar-filters {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+    flex-wrap: wrap;
+}
+
+.filter-group {
+    flex: 1;
+    min-width: 200px;
+}
+
+.filter-group label {
+    display: block;
+    margin-bottom: 0.5rem;
+    color: var(--text-primary);
+    font-weight: 500;
+}
+
+.filter-group select {
+    width: 100%;
+    padding: 0.75rem;
+    border: 1px solid var(--border-color);
+    border-radius: var(--border-radius);
+    background-color: var(--bg-white);
+    color: var(--text-primary);
+    font-size: 1rem;
+}
+
+#applyFilters {
+    align-self: flex-end;
+    margin-bottom: 0.5rem;
+}
+
+.events-section {
+    margin-bottom: 2rem;
+}
+
+.events-section h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.8rem;
+}
+
+.events-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.event-item {
+    padding: 1rem;
+    border-bottom: 1px solid var(--border-color);
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.event-item:hover {
+    background-color: var(--bg-light);
+    transform: translateX(5px);
+}
+
+.event-item .event-content {
+    flex: 1;
+}
+
+.event-item h3 {
+    margin: 0;
+    color: var(--text-primary);
+    font-size: 1.1rem;
+}
+
+.event-item .event-location {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.event-item .event-date {
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+    white-space: nowrap;
+    margin-left: 1rem;
+}
+
+.event-info-box {
+    display: none;
+    margin-top: 2rem;
+    padding: 1.5rem;
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius);
+    border: 1px solid var(--border-color);
+    animation: fadeIn 0.5s ease;
+}
+
+.event-info-box h2 {
+    color: var(--primary-color);
+    margin-bottom: 1rem;
+    font-size: 1.5rem;
+}
+
+.event-info-box h2 i {
+    margin-right: 0.5rem;
+}
+
+.event-details {
+    padding: 1rem;
+    background-color: var(--bg-white);
+    border-radius: var(--border-radius);
+}
+
+.event-details h3 {
+    color: var(--text-primary);
+    margin-bottom: 0.5rem;
+    font-size: 1.2rem;
+}
+
+.event-meta {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    color: var(--text-secondary);
+    font-size: 0.9rem;
+}
+
+.event-details p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin-bottom: 1.5rem;
+}
+
+.event-actions {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.btn {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: var(--border-radius);
+    cursor: pointer;
+    font-size: 0.9rem;
+    transition: all 0.3s ease;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+}
+
+.btn-secondary {
+    background-color: var(--bg-light);
+    color: var(--text-primary);
+    border: 1px solid var(--border-color);
+}
+
+.btn-secondary:hover {
+    background-color: var(--border-color);
+}
+
+.loading {
+    text-align: center;
+    padding: 2rem;
+    color: var(--text-secondary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
+.loading i {
+    font-size: 1.2rem;
+}
+
+.error {
+    color: var(--error-color);
+    padding: 1rem;
+    background-color: var(--error-bg);
+    border-radius: var(--border-radius);
+    margin: 1rem 0;
+    text-align: center;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Cultural Context Styles */
+.cultural-context,
+.traditions,
+.significance {
+    margin-bottom: 1.5rem;
+    padding: 1rem;
+    background-color: var(--bg-light);
+    border-radius: var(--border-radius);
+    border-left: 4px solid var(--primary-color);
+}
+
+.cultural-context h4,
+.traditions h4,
+.significance h4 {
+    color: var(--primary-color);
+    margin-bottom: 0.5rem;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.cultural-context p,
+.traditions p,
+.significance p {
+    color: var(--text-secondary);
+    line-height: 1.6;
+    margin: 0;
+}
+
+/* Event Significance Indicator */
+.event-significance {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    padding: 0.3rem 0.6rem;
+    background-color: var(--primary-light);
+    color: var(--primary-color);
+    border-radius: 1rem;
+    font-size: 0.8rem;
+    margin-top: 0.5rem;
+}
+
+.event-significance i {
+    color: var(--primary-color);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .calendar-container {
+        padding: 1.5rem;
+    }
+
+    .calendar-container h1 {
+        font-size: 2rem;
+    }
+
+    .section-subtitle {
+        font-size: 1rem;
+    }
+
+    .calendar-filters {
+        flex-direction: column;
+    }
+
+    .filter-group {
+        width: 100%;
+    }
+
+    #applyFilters {
+        width: 100%;
+    }
+
+    .event-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.5rem;
+    }
+
+    .event-item .event-date {
+        margin-left: 0;
+    }
+
+    .cultural-context,
+    .traditions,
+    .significance {
+        padding: 0.8rem;
+    }
+
+    .cultural-context h4,
+    .traditions h4,
+    .significance h4 {
+        font-size: 1rem;
+    }
+}
+
+@media (max-width: 480px) {
+    .calendar-main {
+        padding: 2rem 0;
+    }
+
+    .calendar-container {
+        padding: 1rem;
+    }
+
+    .calendar-container h1 {
+        font-size: 1.5rem;
+    }
+
+    .events-section h2 {
+        font-size: 1.4rem;
+    }
+
+    .event-actions {
+        flex-direction: column;
+    }
+
+    .btn {
+        width: 100%;
+        justify-content: center;
+    }
+
+    .event-significance {
+        font-size: 0.7rem;
+        padding: 0.2rem 0.4rem;
+    }
+} 

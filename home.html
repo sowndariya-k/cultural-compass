@@ -5,6 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cultural Compass</title>
     <link rel="stylesheet" href="home-style.css">
+    <link rel="stylesheet" href="chatbot.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"> 
 </head>
 <body>
@@ -123,7 +124,7 @@
                         <img src="https://imagesvs.oneindia.com/img/2025/01/hampi-utsav-2025-jpg-1735832965858_1735832966297-600x338.jpg" alt="Karnataka Event Thumbnail">
                         <div class="card-content">
                             <h3>Hampi Utsav 2025</h3>
-                            <p>Experience Karnataka’s glorious history through dance, music, and light shows.</p>
+                            <p>Experience Karnataka's glorious history through dance, music, and light shows.</p>
                             <span>Upcoming · January 2025 · Karnataka</span>
                         </div>
                     </a>
@@ -159,7 +160,7 @@
         <section id="voices" class="home-featured home-featured-blogs">
             <div class="container">
                 <h2>Voices of India</h2>
-                <p class="section-subtitle" style="text-align: center;">Experience India’s rich culture through real stories, sounds, and sights shared by locals and explorers</p>
+                <p class="section-subtitle" style="text-align: center;">Experience India's rich culture through real stories, sounds, and sights shared by locals and explorers</p>
         
                 <div class="featured-grid">
                     <!-- Story Card 1 - Audio Interview -->
@@ -392,49 +393,30 @@
         });
     </script>
 
-    <!-- Floating Chat Icon -->
-<style>
-    #chat-float {
-      position: fixed;
-      bottom: 20px;
-      right: 20px;
-      background: #25D366;
-      color: white;
-      border-radius: 50%;
-      width: 60px;
-      height: 60px;
-      text-align: center;
-      font-size: 30px;
-      box-shadow: 0 2px 10px rgba(0,0,0,0.2);
-      cursor: pointer;
-      z-index: 9999;
-    }
-    #chat-iframe {
-      display: none;
-      position: fixed;
-      bottom: 90px;
-      right: 20px;
-      width: 350px;
-      height: 500px;
-      border: none;
-      z-index: 9998;
-      box-shadow: 0 0 15px rgba(0,0,0,0.3);
-      border-radius: 15px;
-    }
-  </style>
-  
-  <!-- Chat Icon -->
-  <div id="chat-float" onclick="toggleChat()">💬</div>
-  
-  <!-- Chat Iframe -->
-  <iframe id="chat-iframe" src="http://localhost:5000" title="Chatbot"></iframe>
-  
-  <script>
-    function toggleChat() {
-      var iframe = document.getElementById("chat-iframe");
-      iframe.style.display = (iframe.style.display === "none") ? "block" : "none";
-    }
-  </script>
+    <!-- Floating Chatbot -->
+    <div class="chatbot-container">
+        <button id="chat-toggle" class="chat-toggle">
+            <i class="fas fa-comments"></i>
+        </button>
+        <div id="chat-box" class="chat-box">
+            <div class="chat-header">
+                <h3>Cultural Assistant</h3>
+                <button id="chat-close" class="chat-close">
+                    <i class="fas fa-times"></i>
+                </button>
+            </div>
+            <div id="chat-messages" class="chat-messages"></div>
+            <div class="chat-input-area">
+                <input type="text" id="chat-input" placeholder="Type your message...">
+                <button id="chat-send" class="chat-send">
+                    <i class="fas fa-paper-plane"></i>
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <!-- Link to chatbot.js -->
+    <script src="chatbot.js"></script>
 
 </body>
 </html>
